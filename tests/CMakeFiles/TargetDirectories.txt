@@ -1,0 +1,3 @@
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/CMakeFiles/rebuild_cache.dir
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/CMakeFiles/edit_cache.dir
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/CMakeFiles/runTests.dir

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafomatadjexercicio.h
+stdlib.h
+-
+limits.h
+-
+stdbool.h
+-
+string.h
+-
+
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testGrafoMatrizAdj.cpp
+gtest/gtest.h
+-
+../src/grafomatadjexercicio.h
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafomatadjexercicio.h
+
