@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafomatadjexercicio.h
-stdlib.h
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafolistaadjexercicio.h
+iostream
+-
+vector
 -
 limits.h
 -
-stdbool.h
--
-string.h
+bits/stdc++.h
 -
 
-/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testGrafoMatrizAdj.cpp
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testGrafoListaAdj.cpp
 gtest/gtest.h
 -
-../src/grafomatadjexercicio.h
-/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafomatadjexercicio.h
+../src/grafolistaadjexercicio.h
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafolistaadjexercicio.h
 

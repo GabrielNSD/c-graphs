@@ -142,32 +142,32 @@ runTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-testGrafoMatrizAdj.o: testGrafoMatrizAdj.cpp.o
+testGrafoListaAdj.o: testGrafoListaAdj.cpp.o
 
-.PHONY : testGrafoMatrizAdj.o
+.PHONY : testGrafoListaAdj.o
 
 # target to build an object file
-testGrafoMatrizAdj.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoMatrizAdj.cpp.o
-.PHONY : testGrafoMatrizAdj.cpp.o
+testGrafoListaAdj.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoListaAdj.cpp.o
+.PHONY : testGrafoListaAdj.cpp.o
 
-testGrafoMatrizAdj.i: testGrafoMatrizAdj.cpp.i
+testGrafoListaAdj.i: testGrafoListaAdj.cpp.i
 
-.PHONY : testGrafoMatrizAdj.i
+.PHONY : testGrafoListaAdj.i
 
 # target to preprocess a source file
-testGrafoMatrizAdj.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoMatrizAdj.cpp.i
-.PHONY : testGrafoMatrizAdj.cpp.i
+testGrafoListaAdj.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoListaAdj.cpp.i
+.PHONY : testGrafoListaAdj.cpp.i
 
-testGrafoMatrizAdj.s: testGrafoMatrizAdj.cpp.s
+testGrafoListaAdj.s: testGrafoListaAdj.cpp.s
 
-.PHONY : testGrafoMatrizAdj.s
+.PHONY : testGrafoListaAdj.s
 
 # target to generate assembly for a file
-testGrafoMatrizAdj.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoMatrizAdj.cpp.s
-.PHONY : testGrafoMatrizAdj.cpp.s
+testGrafoListaAdj.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoListaAdj.cpp.s
+.PHONY : testGrafoListaAdj.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runTests"
-	@echo "... testGrafoMatrizAdj.o"
-	@echo "... testGrafoMatrizAdj.i"
-	@echo "... testGrafoMatrizAdj.s"
+	@echo "... testGrafoListaAdj.o"
+	@echo "... testGrafoListaAdj.i"
+	@echo "... testGrafoListaAdj.s"
 .PHONY : help
 
 
