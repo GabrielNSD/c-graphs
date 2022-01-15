@@ -142,32 +142,32 @@ runTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-testGrafoListaAdj.o: testGrafoListaAdj.cpp.o
+testMenorCaminho.o: testMenorCaminho.cpp.o
 
-.PHONY : testGrafoListaAdj.o
+.PHONY : testMenorCaminho.o
 
 # target to build an object file
-testGrafoListaAdj.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoListaAdj.cpp.o
-.PHONY : testGrafoListaAdj.cpp.o
+testMenorCaminho.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMenorCaminho.cpp.o
+.PHONY : testMenorCaminho.cpp.o
 
-testGrafoListaAdj.i: testGrafoListaAdj.cpp.i
+testMenorCaminho.i: testMenorCaminho.cpp.i
 
-.PHONY : testGrafoListaAdj.i
+.PHONY : testMenorCaminho.i
 
 # target to preprocess a source file
-testGrafoListaAdj.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoListaAdj.cpp.i
-.PHONY : testGrafoListaAdj.cpp.i
+testMenorCaminho.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMenorCaminho.cpp.i
+.PHONY : testMenorCaminho.cpp.i
 
-testGrafoListaAdj.s: testGrafoListaAdj.cpp.s
+testMenorCaminho.s: testMenorCaminho.cpp.s
 
-.PHONY : testGrafoListaAdj.s
+.PHONY : testMenorCaminho.s
 
 # target to generate assembly for a file
-testGrafoListaAdj.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testGrafoListaAdj.cpp.s
-.PHONY : testGrafoListaAdj.cpp.s
+testMenorCaminho.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMenorCaminho.cpp.s
+.PHONY : testMenorCaminho.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runTests"
-	@echo "... testGrafoListaAdj.o"
-	@echo "... testGrafoListaAdj.i"
-	@echo "... testGrafoListaAdj.s"
+	@echo "... testMenorCaminho.o"
+	@echo "... testMenorCaminho.i"
+	@echo "... testMenorCaminho.s"
 .PHONY : help
 
 

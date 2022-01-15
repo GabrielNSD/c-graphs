@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafolistaadjexercicio.h
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafomenorcaminhoexercicio.h
 iostream
 -
 vector
 -
-limits.h
--
-bits/stdc++.h
+queue
 -
 
-/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testGrafoListaAdj.cpp
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMenorCaminho.cpp
 gtest/gtest.h
 -
-../src/grafolistaadjexercicio.h
-/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafolistaadjexercicio.h
+../src/grafomenorcaminhoexercicio.h
+/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/src/grafomenorcaminhoexercicio.h
 
