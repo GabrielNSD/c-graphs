@@ -276,31 +276,50 @@ public:
     int *bellmanFord(string rotuloVOrigem)
     {
         // IMPLEMENTAR
-        int numeroDeVertices = vertices.size();
-        int indiceOrigem = obterIndiceVertice(rotuloVOrigem);
-        int *distancias = new int[numeroDeVertices];
-        fill_n(distancias, numeroDeVertices, POS_INF); // preenche todas as distâncias com infinito
-        distancias[obterIndiceVertice(rotuloVOrigem)] = 0;
-        for (int i = 0; i < numeroDeVertices - 1; i++)
+        int numeroVertices = vertices.size();
+        int *distancias = new int[numeroVertices];
+        fill(distancias, distancias + numeroVertices, POS_INF);
+
+        int indiceVerticeOrigem = obterIndiceVertice(rotuloVOrigem);
+
+        distancias[indiceVerticeOrigem] = 0;
+
+        bool lastRelax = false;
+        for (int i = 0; i < numeroVertices - 1; i++)
         {
-            bool relaxou = false;
-            for (int j = 0; j < arestas[i].size(); j++)
+            bool relax = false;
+            for (int j = 0; j < arestas.size(); j++)
             {
-                if (distancias[i] + arestas[i][j].second < distancias[i + 1])
+                for (auto a : arestas[j])
                 {
-                    distancias[i + 1] = distancias[i] + arestas[i][j].second;
-                    relaxou = true;
-                }
-                else if (distancias[i + 1] + arestas[i + 1][j].second < distancias[i])
-                {
-                    distancias[i] = distancias[i + 1] + arestas[i + 1][j].second;
-                    relaxou = true;
+                    if (distancias[j] + a.second < distancias[a.first])
+                    {
+                        distancias[a.first] = distancias[j] + a.second;
+                        relax = true;
+                    }
                 }
             }
-
-            if (!relaxou)
+            if (i == (numeroVertices - 2) && relax) // verifica que houve relaxamento na última iteração
             {
-                i = numeroDeVertices - 1;
+                lastRelax = true;
+            }
+        }
+
+        if (lastRelax) // garante execução de verificação do ciclo negativo apenas se houver relaxamento até última iteração de menor caminho
+        {
+            // cout << "RODOU" << endl;
+            for (int i = 0; i < numeroVertices - 1; i++)
+            {
+                for (int j = 0; j < arestas.size(); j++)
+                {
+                    for (auto a : arestas[j])
+                    {
+                        if (distancias[j] + a.second < distancias[a.first])
+                        {
+                            distancias[a.first] = NEG_INF;
+                        }
+                    }
+                }
             }
         }
 
@@ -320,12 +339,44 @@ public:
      * Pseudo-c�digo: https://github.com/eduardolfalcao/edii/blob/master/conteudos/Grafos.md#dijkstra
      * Ilustra��o: https://docs.google.com/drawings/d/1NmkJPHpcg8uVcDZ24FQiYs3uHR5n-rdm1AZwD74WiMY/edit?usp=sharing
      **/
-    /* int *dijkstra(string rotuloVOrigem)
+    int *dijkstra(string rotuloVOrigem)
     {
         // IMPLEMENTAR
-        int a[] = {1};
-        return a;
-    } */
+        int numeroVertices = vertices.size();
+
+        bool *visitados = new bool[numeroVertices]{false};
+        int *distancias = new int[numeroVertices];
+        fill(distancias, distancias + numeroVertices, POS_INF);
+
+        priority_queue<pair<int, int>> filaPrioridade;
+
+        int indiceOrigem = obterIndiceVertice(rotuloVOrigem);
+
+        distancias[indiceOrigem] = 0;
+
+        filaPrioridade.push({0, indiceOrigem});
+
+        while (!filaPrioridade.empty())
+        {
+            int indice = filaPrioridade.top().second;
+            filaPrioridade.pop();
+            if (visitados[indice])
+                continue;
+            visitados[indice] = true;
+
+            for (auto a : arestas[indice])
+            {
+                int vertice = a.first;
+                int peso = a.second;
+                if (distancias[indice] + peso < distancias[vertice])
+                {
+                    distancias[vertice] = distancias[indice] + peso;
+                    filaPrioridade.push({-distancias[vertice], vertice});
+                }
+            }
+        }
+        return distancias;
+    }
 
     vector<string> getVertices()
     {

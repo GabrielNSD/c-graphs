@@ -58,8 +58,6 @@ TEST_F(MenorCaminhoTest, BellmanFordGrafoSemCicloNegativo)
 	inserirVertices(grafo, 1, 9);
 	construirGrafoPonderado(grafo);
 
-	cout << "foi" << endl;
-
 	int *distancias = grafo->bellmanFord("v1");
 	EXPECT_EQ(distancias[0], 0);
 	EXPECT_EQ(distancias[1], 6);
