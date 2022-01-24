@@ -76,27 +76,27 @@ include CMakeFiles/runTests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/runTests.dir/flags.make
 
-CMakeFiles/runTests.dir/testMenorCaminho.cpp.o: CMakeFiles/runTests.dir/flags.make
-CMakeFiles/runTests.dir/testMenorCaminho.cpp.o: testMenorCaminho.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/testMenorCaminho.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/testMenorCaminho.cpp.o -c /home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMenorCaminho.cpp
+CMakeFiles/runTests.dir/testMST.cpp.o: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/testMST.cpp.o: testMST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/testMST.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runTests.dir/testMST.cpp.o -c /home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMST.cpp
 
-CMakeFiles/runTests.dir/testMenorCaminho.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/testMenorCaminho.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMenorCaminho.cpp > CMakeFiles/runTests.dir/testMenorCaminho.cpp.i
+CMakeFiles/runTests.dir/testMST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runTests.dir/testMST.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMST.cpp > CMakeFiles/runTests.dir/testMST.cpp.i
 
-CMakeFiles/runTests.dir/testMenorCaminho.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/testMenorCaminho.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMenorCaminho.cpp -o CMakeFiles/runTests.dir/testMenorCaminho.cpp.s
+CMakeFiles/runTests.dir/testMST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/testMST.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gabrielnsd/Documents/UFRN/EDII/c-graphs/tests/testMST.cpp -o CMakeFiles/runTests.dir/testMST.cpp.s
 
 # Object files for target runTests
 runTests_OBJECTS = \
-"CMakeFiles/runTests.dir/testMenorCaminho.cpp.o"
+"CMakeFiles/runTests.dir/testMST.cpp.o"
 
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
-runTests: CMakeFiles/runTests.dir/testMenorCaminho.cpp.o
+runTests: CMakeFiles/runTests.dir/testMST.cpp.o
 runTests: CMakeFiles/runTests.dir/build.make
 runTests: /usr/lib/x86_64-linux-gnu/libgtest.a
 runTests: CMakeFiles/runTests.dir/link.txt

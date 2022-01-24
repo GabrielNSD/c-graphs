@@ -142,32 +142,32 @@ runTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
 .PHONY : runTests/fast
 
-testMenorCaminho.o: testMenorCaminho.cpp.o
+testMST.o: testMST.cpp.o
 
-.PHONY : testMenorCaminho.o
+.PHONY : testMST.o
 
 # target to build an object file
-testMenorCaminho.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMenorCaminho.cpp.o
-.PHONY : testMenorCaminho.cpp.o
+testMST.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMST.cpp.o
+.PHONY : testMST.cpp.o
 
-testMenorCaminho.i: testMenorCaminho.cpp.i
+testMST.i: testMST.cpp.i
 
-.PHONY : testMenorCaminho.i
+.PHONY : testMST.i
 
 # target to preprocess a source file
-testMenorCaminho.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMenorCaminho.cpp.i
-.PHONY : testMenorCaminho.cpp.i
+testMST.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMST.cpp.i
+.PHONY : testMST.cpp.i
 
-testMenorCaminho.s: testMenorCaminho.cpp.s
+testMST.s: testMST.cpp.s
 
-.PHONY : testMenorCaminho.s
+.PHONY : testMST.s
 
 # target to generate assembly for a file
-testMenorCaminho.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMenorCaminho.cpp.s
-.PHONY : testMenorCaminho.cpp.s
+testMST.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/testMST.cpp.s
+.PHONY : testMST.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runTests"
-	@echo "... testMenorCaminho.o"
-	@echo "... testMenorCaminho.i"
-	@echo "... testMenorCaminho.s"
+	@echo "... testMST.o"
+	@echo "... testMST.i"
+	@echo "... testMST.s"
 .PHONY : help
 
 
